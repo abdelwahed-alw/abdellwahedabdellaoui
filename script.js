@@ -811,8 +811,8 @@ const projectsData = [{
     ar: "موقع سيرة ذاتية تفاعلي ومتجاوب: هذا المشروع هو نتاج رؤيتي وأفكاري التصميمية والوظيفية، حيث قمت بتطويره بالتعاون مع أدوات الذكاء الاصطناعي التي ساعدت في تطبيق وتحسين الجوانب التقنية. الموقع مبني باستخدام HTML لتنظيم المحتوى، CSS لتصميم متجاوب وجميل، وجافا سكريبت لإضافة تفاعلات ديناميكية مثل تبديل الوضع الداكن/الفاتح وتأثيرات التمرير. هدفي كان تحقيق توازن بين الجمالية والأداء العالي، وقد نجحت في بناء منصة احترافية تبرز قدراتي في الواجهة الأمامية وفي توجيه التقنيات المتقدمة."
   },
   tags: ["HTML", "CSS", "JavaScript", "Ai ools"],
-  demo: "https://abdelwahed-alw.github.io/zayna/#",
-  code: "https://github.com/abdelwahed-alw/zayna"
+  demo: "https://abdelwahed-alw.github.io/abdellwahedabdellaoui/",
+  code: "https://github.com/abdelwahed-alw/abdellwahedabdellaoui"
 }, {
   id: "ecommerce-store",
   title: "E-commerce Store",
