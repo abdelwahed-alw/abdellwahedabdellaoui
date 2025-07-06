@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Abdelwahed Abdellaoui - Ambitious web developer from Morocco specialized in HTML, CSS, JavaScript. Browse my responsive projects and contact me for collaboration in building innovative web solutions.">
+  <title>Abdelwahed Abdellaoui | Web Developer | CV</title>
+
+  <meta name="author" content="Abdelwahed Abdellaoui">
+  <meta name="keywords" content="web developer, frontend, HTML, CSS, JavaScript, portfolio, Morocco">
+  <meta property="og:title" content="Abdelwahed Abdellaoui - Web Developer Portfolio">
+  <meta property="og:description" content="Professional portfolio showcasing my web development projects and skills." >
+  <meta property="og:image" content="https://placehold.co/1200x630/0f172a/f1f5f9?text=Abdelwahed+Portfolio+Preview">
+  <meta property="og:url" content="https://yourwebsite.com">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Abdelwahed Abdellaoui - Web Developer Portfolio">
+  <meta name="twitter:description" content="Check out my web development projects and expertise.">
+  <meta name="twitter:image" content="https://placehold.co/600x314/0f172a/f1f5f9?text=Abdelwahed+Twitter+Preview">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="2.css">
+</head>
+<body>
+  <div class="intro-overlay" id="introOverlay">
+    <div class="intro-container">
+      <div class="intro-content">
+        <div class="intro-name">
+          <span class="letter">A</span>
+          <span class="letter">B</span>
+          <span class="letter">D</span>
+          <span class="letter">E</span>
+          <span class="letter">L</span>
+          <span class="letter">W</span>
+          <span class="letter">A</span>
+          <span class="letter">H</span>
+          <span class="letter">E</span>
+          <span class="letter">D</span>
+        </div>
+        <h2 class="intro-title" >Creative Developer </h2>
+        <div class="intro-subtitle">Building Digital Experiences</div>
+      </div>
+      
+      <div class="intro-progress">
+        <div class="progress-bar"></div>
+        <div class="progress-text">Loading Portfolio...</div>
+      </div>
+      
+      <div class="particles-container"></div>
+    </div>
+  </div>
+
+  <main id="main-content" class="container" style="display: none; opacity: 0;">
+    <nav aria-label="Main navigation">
+      <div class="logo">
+        <a href="#" class="logo-link">
+          <span class="logo-icon"><i class="fas fa-code"></i></span>
+          <span class="logo-text">Abdelwahed</span>
+        </a>
+      </div>
+      
+      <div class="nav-container">
+        <ul class="nav-menu">
+            <li class="nav-item active"><a href="#about" class="nav-link"><i
+                                class="fas fa-user nav-icon"></i><span class="nav-text" data-en="About"
+                                data-fr="À Propos" data-ar="من أنا">About me</span></a></li>
+                    <li class="nav-item"><a href="#education" class="nav-link"><i
+                                class="fas fa-graduation-cap nav-icon"></i><span class="nav-text" data-en="Education"
+                                data-fr="Éducation" data-ar="التعليم">Education</span></a></li>
+                    <li class="nav-item"><a href="#experience" class="nav-link"><i
+                                class="fas fa-briefcase nav-icon"></i><span class="nav-text" data-en="Experience"
+                                data-fr="Expérience" data-ar="الخبرة">Experience</span></a></li>
+                    <li class="nav-item"><a href="#skills" class="nav-link"><i class="fas fa-cogs nav-icon"></i><span
+                                class="nav-text" data-en="Skills" data-fr="Compétences"
+                                data-ar="المهارات">Skills</span></a></li>
+                    <li class="nav-item"><a href="#applications" class="nav-link"><i
+                                class="fas fa-laptop-code nav-icon"></i><span class="nav-text" data-en="Applications"
+                                data-fr="Applications" data-ar="التطبيقات">Applications</span></a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link"><i
+                                class="fas fa-project-diagram nav-icon"></i><span class="nav-text" data-en="Projects"
+                                data-fr="Projets" data-ar="المشاريع">Projects</span></a></li>
+                    <li class="nav-item"><a href="#testimonials" class="nav-link"><i
+                                class="fas fa-quote-left nav-icon"></i><span class="nav-text" data-en="Testimonials"
+                                data-fr="Témoignages" data-ar="الشهادات">Testimonials</span></a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><i
+                                class="fas fa-envelope nav-icon"></i><span class="nav-text" data-en="Contact"
+                                data-fr="Contact" data-ar="الاتصال">Contact</span></a></li>
+               
+        </ul>
+        
+        <div class="nav-controls">
+          <div class="language-dropdown-container" style="position: relative;">
+            <button class="language-toggle" id="languageToggle" aria-label="Toggle language">
+              <i class="fas fa-globe"></i>
+              <span class="language-text">EN</span>
+            </button>
+            
+            <div class="language-dropdown" id="languageDropdown">
+              <a href="#" class="language-option active" data-lang="en">
+                <i class="fas fa-check"></i> English (EN)
+              </a>
+              <a href="#" class="language-option" data-lang="fr">
+                <i class="fas fa-check"></i> Français (FR)
+              </a>
+              <a href="#" class="language-option" data-lang="ar">
+                <i class="fas fa-check"></i> العربية (AR)
+              </a>
+            </div>
+          </div>
+          
+          <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+            <i class="fas fa-palette theme-icon-blue"></i>
+            <i class="fas fa-fire theme-icon-red"></i>
+          </button>
+          
+          <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <a href="#main-content" class="skip-link">Skip to content</a>
+
+    <header>
+      <div class="hero">
+        <img src="/picture/logo.jpg" alt="abdelwahed abdellaoui" class="profile-img" loading="lazy">
+        <h1>Abdelwahed Abdellaoui</h1>
+         <p data-en="Developer | Teacher | Translator | Passionate about building innovative solutions"
+                    data-fr="Développeur | Enseignant | Traducteur | Passionné par la création de solutions innovantes"
+                    data-ar="مطور | مدرس | مترجم | شغوف ببناء حلول مبتكرة">Developer | Teacher |
+                    Translator | Passionate about building innovative solutions</p>
+        <div class="cta-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fas fa-paper-plane"></i> <span data-en="Contact Me" data-fr="Contactez-moi" data-ar="اتصل بي">Contact Me</span>
+          </a>
+          <a href="path/to/your/cv-en.pdf" class="btn btn-outline" id="downloadCVBtn" download>
+            <i class="fas fa-download"></i> <span data-en="Download CV (PDF)" data-fr="Télécharger CV (PDF)" data-ar="تحميل السيرة الذاتية (PDF)">Download CV (PDF)</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <section id="about" class="fade-in">
+      <h2> <i class="fas fa-user float"></i> <span  data-en="About" data-fr="À Propos" data-ar="عني" class="translatable-text">About</span></h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p data-en="I’m Abdelwahed Abdellaoui, a 22-year-old technology enthusiast from Aït Ourir, Morocco. My fascination with technology began the day I discovered what a mobile phone could do — long before I knew what programming really meant. Since then, I’ve been passionately exploring the digital world, driven by curiosity and a desire to create."
+             data-fr="Je suis Abdelwahed Abdellaoui, un passionné de technologie de 22 ans originaire d'Aït Ourir, Maroc. Ma fascination pour la technologie a commencé le jour où j'ai découvert ce qu'un téléphone portable pouvait faire — bien avant de savoir ce que signifiait réellement la programmation. Depuis, j'explore avec passion le monde numérique, animé par la curiosité et le désir de créer."
+             data-ar="أنا عبدالواحد عبدلاوي، شاب أبلغ من العمر 22 عامًا، من آيت ورير، المغرب، ومتحمس للتكنولوجيا بجميع أشكالها. بدأ افتتاني بالتكنولوجيا في اليوم الذي اكتشفت فيه ما يمكن للهاتف المحمول فعله — قبل وقت طويل من معرفتي بما تعنيه البرمجة حقًا. ومنذ ذلك الحين، وأنا أستكشف العالم الرقمي بشغف، مدفوعًا بالفضول والرغبة في الإبداع.">
+            I’m Abdelwahed Abdellaoui, a 22-year-old technology enthusiast from Aït Ourir, Morocco. My fascination with technology began the day I discovered what a mobile phone could do — long before I knew what programming really meant. Since then, I’ve been passionately exploring the digital world, driven by curiosity and a desire to create.
+          </p>
+          <p data-en="Rather than focusing on just one area, I aim to build a strong foundation in multiple fields of tech, from design to development. Currently, I’m learning the core building blocks of the web — HTML, CSS — and gradually expanding to JavaScript and modern tools like React."
+             data-fr="Plutôt que de me concentrer sur un seul domaine, mon objectif est de bâtir une base solide dans plusieurs domaines technologiques, du design au développement. Actuellement, j'apprends les éléments fondamentals du web — HTML, CSS — et j'élargis progressivement mes compétences à JavaScript et aux outils modernes comme React."
+             data-ar="بدلاً من التركيز على مجال واحد فقط، أهدف إلى بناء أساس قوي في مجالات متعددة من التكنولوجيا، من التصميم إلى التطوير. حاليًا، أتعلم اللبنات الأساسية للويب — HTML، CSS — وأتوسع تدريجيًا إلى JavaScript والأدوات الحديثة مثل React.">
+            Rather than focusing on just one area, I aim to build a strong foundation in multiple fields of tech, from design to development. Currently, I’m learning the core building blocks of the web — HTML, CSS — and gradually expanding to JavaScript and modern tools like React.
+          </p>
+          <p data-en="In addition to programming, I’ve worked as a private tutor teaching essential subjects to elementary and middle school students. I’ve also had a practical job experience where I was responsible for handling service payments, managing money carefully, tracking totals, and ensuring everything was well organized."
+             data-fr="En plus de la programmation, j'ai travaillé comme tuteur privé enseignant des matières essentielles aux élèves du primaire et du collège. J'ai également eu une expérience professionnelle pratique où j'étais responsable de la gestion des paiements de services, de la gestion minutieuse de l'argent, du suivi des totaux et de la garantie que tout était bien organisé."
+             data-ar="بالإضافة إلى البرمجة، عملت كمدرس خاص لتدريس المواد الأساسية لطلاب المرحلة الابتدائية والإعدادية. كما كانت لدي خبرة عملية في وظيفة كنت فيها مسؤولاً عن التعامل مع مدفوعات الخدمات، وإدارة الأموال بعناية، وتتبع الإجماليات، والتأكد من أن كل شيء منظم بشكل جيد.">
+            In addition to programming, I’ve worked as a private tutor teaching essential subjects to elementary and middle school students. I’ve also had a practical job experience where I was responsible for handling service payments, managing money carefully, tracking totals, and ensuring everything was well organized.
+          </p>
+          <p data-en="My goal is to join a dynamic team where I can grow as a web developer, keep learning, and contribute to real solutions that improve everyday life."
+             data-fr="Mon objectif est de rejoindre une équipe dynamique où je pourrai évoluer en tant que développeur web, continuer à apprendre et contribuer à des solutions concrètes qui améliorent la vie quotidienne."
+             data-ar="هدفي هو الانضمام إلى فريق ديناميكي حيث يمكنني النمو كمطور ويب، ومواصلة التعلم، والمساهمة في حلول حقيقية تحسن الحياة اليومية.">
+            My goal is to join a dynamic team where I can grow as a web developer, keep learning, and contribute to real solutions that improve everyday life.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="/picture/aborut.webp" alt="about image" class="about-image" loading="lazy">
+                  </div>
+      </div>
+    </section>
+
+    <section id="education" class="fade-in">
+      <h2><i class="fas fa-graduation-cap float"></i> <span  data-en="Education" data-fr="Éducation" data-ar="التعليم" >Education</span></h2>
+      <div class="timeline-item">
+         <h3 class="timeline-title" data-en="Technical Diploma in Software Development"
+                    data-fr="Diplôme Technique en Développement Logiciel" data-ar="دبلوم تقني في تطوير البرمجيات">
+                    Technical Diploma in Software Development</h3>
+         <h4 class="timeline-subtitle" data-en="ESET Institute" data-fr="Institut ESET" data-ar="معهد ESET">ESET
+                    Institute</h4><span class="timeline-date" data-en="Oct 2024 - 2026 (Year 1)"
+                    data-fr="Oct. 2024 - 2026 (Année 1)" data-ar="أكتوبر 2024 - 2026 (السنة الأولى)">Oct 2024 - 2026
+                    (Year 1)</span>
+         <ul class="timeline-list">
+                    <li><span data-en="Started in October 2024, finishing in 2026 (currently completing Year 1)"
+                            data-fr="Commencé en octobre 2024, fin en 2026 (actuellement en première année)"
+                            data-ar="بدأت في أكتوبر 2024، تنتهي في 2026 (حالياً أكمل السنة الأولى)">Started in October
+                            2024, finishing in 2026 (currently completing Year 1)</span></li>
+                </ul>
+      </div>
+      <div class="divider"></div>
+      <div class="timeline-item">
+       <h3 class="timeline-title" data-en="University Studies – Geography"
+                    data-fr="Études Universitaires – Géographie" data-ar="دراسات جامعية – جغرافيا">University Studies –
+                    Geography</h3>
+                  <h4 class="timeline-subtitle" data-en="University" data-fr="Université" data-ar="الجامعة">University
+                </h4><span class="timeline-date" data-en="Completed two years" data-fr="Deux années complétées" data-ar="أكملت سنتين">Completed two years</span>
+                <ul class="timeline-list">
+                    <li><span data-en="Completed two years before shifting to tech"
+                            data-fr="Complété deux années avant de me diriger vers la technologie"
+                            data-ar="أكملت سنتين قبل التحول إلى التكنولوجيا">Completed two years before shifting to
+                            tech</span></li>
+                </ul>
+      </div>
+      <div class="divider"></div>
+            <div class="timeline-item">
+                <h3 class="timeline-title" data-en="High School Diploma in Humanities"
+                    data-fr="Diplôme du Baccalauréat en Sciences Humaines"
+                    data-ar="شهادة البكالوريا في العلوم الإنسانية">High School Diploma in Humanities</h3>
+                <h4 class="timeline-subtitle" data-en="High School" data-fr="Lycée" data-ar="الثانوية">High School</h4>
+                <span class="timeline-date" data-en="2022, with distinction" data-fr="2022, avec mention"
+                    data-ar="2022، مع مرتبة الشرف">2022, with distinction</span>
+                <ul class="timeline-list">
+                    <li><span data-en="Awarded with distinction" data-fr="Décerné avec mention"
+                            data-ar="مُنحت بامتياز">Awarded with distinction</span></li>
+                </li>
+                </ul>
+      </div>
+     <div class="divider"></div>
+            <div class="timeline-item">
+                <h3 class="timeline-title" data-en="Additional Courses (Online & Self-Learning)"
+                    data-fr="Cours Complémentaires (En Ligne & Auto-Apprentissage)"
+                    data-ar="دورات إضافية (عبر الإنترنت والتعلم الذاتي)">Additional Courses (Online & Self-Learning)
+                </h3>
+                <h4 class="timeline-subtitle" data-en="Various Online Platforms" data-fr="Diverses Plateformes En Ligne"
+                    data-ar="منصات متنوعة عبر الإنترنت">Various Online Platforms</h4>
+               <ul class="timeline-list">
+                    <li><span data-en="English language course" data-fr="Cours de langue anglaise"
+                            data-ar="دورة في اللغة الإنجليزية">English language course</span></li>
+                    <li><span data-en="Python programming course" data-fr="Cours de programmation Python"
+                            data-ar="دورة في برمجة بايثون">Python programming course</span></li>
+                    <li><span data-en="French language course" data-fr="Cours de langue française"
+                            data-ar="دورة في اللغة الفرنسية">French language course</span></li>
+                    <li><span data-en="Graphic design: image editing, logos, ads"
+                            data-fr="Design graphique : retouche d'images, logos, publicités"
+                            data-ar="تصميم جرافيك: تحرير الصور، الشعارات، الإعلانات">Graphic design: image editing,
+                            logos, ads</span></li>
+                    <li><span data-en="Adobe Photoshop" data-fr="Adobe Photoshop" data-ar="أدوبي فوتوشوب">Adobe
+                            Photoshop</span></li>
+                    <li><span data-en="Mobile app development using Sketchware"
+                            data-fr="Développement d'applications mobiles avec Sketchware"
+                            data-ar="تطوير تطبيقات الهاتف باستخدام Sketchware">Mobile app development using
+                            Sketchware</span></li>
+                    <li><span data-en="Digital marketing" data-fr="Marketing digital" data-ar="التسويق الرقمي">Digital
+                            marketing</span></li>
+                    <li><span data-en="Other diverse courses (some completed, some still in progress)"
+                            data-fr="Autres cours divers (certains terminés, d'autres en cours)"
+                            data-ar="دورات متنوعة أخرى (بعضها مكتمل، وبعضها مازال قيد الإنجاز)">Other diverse courses
+                            (some completed, some still in progress)</span></li>
+                </ul>
+      </div>
+    </section>
+
+    <section id="experience" class="fade-in">
+            <h2><i class="fas fa-briefcase float"></i><span  data-en="Experience" data-fr="Expérience" data-ar="الخبرة"
+                    class="translatable-text">Experience</span></h2>
+            <div class="timeline-item">
+                <h3 class="timeline-title" data-en="Service Payment Assistant"
+                    data-fr="Assistant de Paiement de Services" data-ar="مساعد دفع الخدمات">Service Payment Assistant
+                </h3>
+                <h4 class="timeline-subtitle" data-en="Private Business" data-fr="Entreprise Privée"
+                    data-ar="مؤسسة خاصة">Private Business</h4><span class="timeline-date" data-en="2023 to 2025"
+                    data-fr="2023 à 2025" data-ar="2023 إلى 2025">2023 to 2025</span>
+                <ul class="timeline-list">
+                    <li><span data-en="Managed client payments" data-fr="Géré les paiements des clients"
+                            data-ar="إدارة مدفوعات العملاء">Managed client payments</span></li>
+                    <li><span data-en="Tracked totals, submitted reports"
+                            data-fr="Suivi des totaux, soumission de rapports"
+                            data-ar="تتبع الإجماليات، تقديم التقارير">Tracked totals, submitted reports</span></li>
+                    <li><span data-en="Handled cash carefully and ensured everything was well organized"
+                            data-fr="Géré l'argent avec soin et assuré une bonne organisation"
+                            data-ar="التعامل مع النقدية بعناية وضمان التنظيم الجيد">Handled cash carefully and ensured
+                            everything was well organized</span></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="timeline-item">
+                <h3 class="timeline-title" data-en="Private Tutor" data-fr="Tuteur Privé" data-ar="مدرس خاص">Private
+                    Tutor</h3>
+                <h4 class="timeline-subtitle" data-en="Self-Employed" data-fr="Indépendant" data-ar="عمل حر">
+                    Self-Employed</h4><span class="timeline-date" data-en="2022–2023" data-fr="2022–2023"
+                    data-ar="2022-2023">2022–2023</span>
+                <ul class="timeline-list">
+                    <li><span data-en="Taught up to 20 students from primary and middle school in core subjects"
+                            data-fr="Enseigné jusqu'à 20 élèves du primaire et du collège dans les matières principales"
+                            data-ar="تدريس ما يصل إلى 20 طالبًا من المرحلتين الابتدائية والإعدادية في المواد الأساسية">Taught
+                            up to 20 students from primary and middle school in core subjects</span></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="timeline-item">
+                <h3 class="timeline-title" data-en="English Language Instructor"
+                    data-fr="Instructeur de Langue Anglaise" data-ar="مدرب لغة إنجليزية">English Language Instructor
+                </h3>
+                <h4 class="timeline-subtitle" data-en="Community Program" data-fr="Programme Communautaire"
+                    data-ar="برنامج مجتمعي">Community Program</h4><span class="timeline-date" data-en="2023"
+                    data-fr="2023" data-ar="2023">2023</span>
+                <ul class="timeline-list">
+                    <li><span data-en="Taught small groups (3–4 children) basic vocabulary and communication"
+                            data-fr="Enseigné à de petits groupes (3-4 enfants) le vocabulaire de base et la communication"
+                            data-ar="تدريس مجموعات صغيرة (3-4 أطفال) المفردات الأساسية والتواصل">Taught small groups
+                            (3–4 children) basic vocabulary and communication</span></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="timeline-item">
+                <h3 class="timeline-title" data-en="Small Business Experience" data-fr="Expérience en Petite Entreprise"
+                    data-ar="خبرة في الأعمال الصغيرة">Small Business Experience</h3>
+                <h4 class="timeline-subtitle" data-en="Entrepreneurial Venture" data-fr="Projet Entrepreneurial"
+                    data-ar="مشروع ريادي">Entrepreneurial Venture</h4><span class="timeline-date" data-en="2023"
+                    data-fr="2023" data-ar="2023">2023</span>
+                <ul class="timeline-list">
+                    <li><span data-en="Had a short experience in product buying/selling (small trading)"
+                            data-fr="Courte expérience dans l'achat/vente de produits (petit commerce)"
+                            data-ar="كان لدي خبرة قصيرة في شراء/بيع المنتجات (تجارة صغيرة)">Had a short experience in
+                            product buying/selling (small trading)</span></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="timeline-item">
+                <h3 class="timeline-title" data-en="Electronics Repair Enthusiast"
+                    data-fr="Passionné de Réparation Électronique" data-ar="هاوي إصلاح الإلكترونيات">Electronics Repair
+                    Enthusiast</h3>
+                <h4 class="timeline-subtitle" data-en="Hobbyist" data-fr="Hobbyiste" data-ar="هاوٍ">Hobbyist</h4><span
+                    class="timeline-date" data-en="Since childhood" data-fr="Depuis l'enfance"
+                    data-ar="منذ الطفولة">Since childhood</span>
+                <ul class="timeline-list">
+                    <li><span data-en="Passionate about fixing phones and electronic devices (hardware/software)"
+                            data-fr="Passionné par la réparation de téléphones et d'appareils électroniques (matériel/logiciel)"
+                            data-ar="شغوف بإصلاح الهواتف والأجهزة الإلكترونية (عتاد/برمجيات)">Passionate about fixing
+                            phones and electronic devices (hardware/software)</span></li>
+                </ul>
+            </div>
+            <div class="divider"></div>
+            <div class="timeline-item">
+                <h3 class="timeline-title" data-en="Driver's License" data-fr="Permis de Conduire"
+                    data-ar="رخصة القيادة">Driver's License</h3>
+                <h4 class="timeline-subtitle" data-en="Category B" data-fr="Catégorie B" data-ar="فئة ب">Category B</h4>
+                <span class="timeline-date" data-en="Valid since 2022" data-fr="Valide depuis 2022"
+                    data-ar="صالحة منذ 2022">Valid since 2022</span>
+                <ul class="timeline-list">
+                    <li><span data-en="Obtained Category B Driver's License"
+                            data-fr="Obtenu le permis de conduire Catégorie B"
+                            data-ar="حاصل على رخصة القيادة من الفئة ب">Obtained Category B Driver's License</span></li>
+                </ul>
+            </div>
+        </section>
+
+    <section id="skills" class="fade-in">
+            <h2><i class="fas fa-cogs float"></i> <span
+                 data-en="Skills" data-fr="Compétences" data-ar="المهارات"   class="translatable-text">Skills</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i
+                            class="fas fa-desktop"></i> <span  data-en="Practical Knowledge" data-fr="Connaissances Pratiques" data-ar="المعرفة العملية" class="translatable-text" data-key="Practical Knowledge"> Practical Knowledge </span></h3>
+                    <div class="skill-item">
+                        <p>HTML</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>CSS</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>JavaScript</p>
+                    </div>
+                    <div class="skill-item">
+                        <p data-en="Responsive Web Design" data-fr="Conception Web Réactive"
+                            data-ar="تصميم الويب المتجاوب">Responsive Web Design</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Bootstrap</p>
+                    </div>
+                    <div class="skill-item">
+                        <p data-en="Sketchware (3 mobile apps)" data-fr="Sketchware (3 applications mobiles)"
+                            data-ar="Sketchware (3 تطبيقات هاتف)">Sketchware (3 mobile apps)</p>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i
+                            class="fas fa-seedling"></i><span  data-en="Beginner Level" data-fr="Niveau Débutant" data-ar="مستوى مبتدئ" class="translatable-text" data-key="Beginner Level" > Beginner Level </span></h3>
+                    <div class="skill-item">
+                        <p data-en="React – Practical beginner level. Used in small projects and hands-on tests"
+                            data-fr="React – Niveau débutant pratique. Utilisé dans de petits projets et des tests pratiques"
+                            data-ar="React – مستوى مبتدئ عملي. استخدم في مشاريع صغيرة واختبارات عملية">React – Practical
+                            beginner level. Used in small projects and hands-on tests</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Python</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Pascal</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>C++</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>WordPress</p>
+                    </div>
+                    <div class="skill-item">
+                        <p data-en="Digital Marketing" data-fr="Marketing Digital" data-ar="التسويق الرقمي">Digital
+                            Marketing</p>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 ><i class="fas fa-language"></i> <span data-en="Languages" data-fr="Langues" data-ar="اللغات" class="translatable-text" data-key="Languages" >Languages </span> </h3>
+                    <div class="skill-item">
+                        <p data-en="Arabic: Native"
+                            data-fr="Arabe : Langue maternelle"
+                            data-ar="العربية: لغتي الأم">Arabic: Native
+                        </p>
+                    </div>
+                    <div class="skill-item">
+                        <p data-en="English: Advanced level. Able to write, speak, and understand complex content. I use English daily for learning, coding, and communication"
+                            data-fr="Anglais :Niveau avancé. Capable d’écrire, de parler et de comprendre des contenus complexes. J’utilise l’anglais quotidiennement pour l’apprentissage, la programmation et la communication."
+                            data-ar="الإنجليزية: مستوى متقدم. قادر على الكتابة والتحدث وفهم المحتوى المعقد. أستخدم الإنج">
+                           English: Advanced level. Able to write, speak, and understand complex
+                            content. I use English daily for learning, coding, and communication</p>
+                    </div>
+                    <div class="skill-item">
+                        <p data-en="French: Beginner level, currently improving through focused daily learning. I aim to reach an advanced level within the next year"
+                            data-fr="Français :Niveau débutant, en cours d'amélioration grâce à un apprentissage quotidien ciblé. Je vise à atteindre un niveau avancé au cours de la prochaine année"
+                            data-ar="الفرنسية: مستوى مبتدئ، أعمل حاليًا على تحسينها من خلال التعلم اليومي المركز. أهدف للوصول إلى مستوى متقدم خلال العام القادم">
+                           French: Beginner level, currently improving through focused daily learning.
+                            I aim to reach an advanced level within the next year</p>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 ><i
+                            class="fas fa-hands-helping"></i><span data-en="Soft Skills" data-fr="Compétences Non Techniques" data-ar="المهارات الشخصية" class="translatable-text" data-key="Soft Skills"> Soft Skills</span></h3>
+                    <div class="skill-item">
+                        <p data-en="Arabic–English translation" data-fr="Traduction arabe-anglais"
+                            data-ar="الترجمة من العربية إلى الإنجليزية">Arabic–English translation</p>
+                    </div>
+                    <div class="skill-item">
+                        <p data-en="Teaching & explanation" data-fr="Enseignement et explication"
+                            data-ar="التدريس والشرح">Teaching & explanation</p>
+                    </div>
+                    <div class="skill-item">
+                        <p data-en="Basic accounting & organization" data-fr="Comptabilité et organisation de base"
+                            data-ar="المحاسبة الأساسية والتنظيم">Basic accounting & organization</p>
+                    </div>
+                    <div class="skill-item">
+                        <p data-en="Self-learning & problem-solving"
+                            data-fr="Auto-apprentissage et résolution de problèmes"
+                            data-ar="التعلم الذاتي وحل المشكلات">Self-learning & problem-solving</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="applications" class="fade-in">
+            <h2><i
+                    class="fas fa-toolbox float"></i><span  data-en="Applications" data-fr="Applications" data-ar="التطبيقات" class="translatable-text">Applications</span></h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3><i class="fas fa-file-alt"></i> <span  data-en="Office & Productivity" data-fr="Bureautique et Productivité"
+                        data-ar="المكتب والإنتاجية"  class="translatable-text" data-key="Office & Productivity" >Office & Productivity </span></h3>
+                    <div class="skill-item">
+                        <p>Microsoft Word</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Microsoft Excel</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Microsoft PowerPoint</p>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 ><i
+                            class="fas fa-paint-brush"></i> <span data-en="Design & Creative" data-fr="Design et Création" data-ar="التصميم والإبداع" class="translatable-text" data-key="Design & Creative"> Design & Creative </span>
+                    </h3>
+                    <div class="skill-item">
+                        <p>Adobe Photoshop</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Figma</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Canva</p>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-code"></i> <span  data-en="Development Environment" data-fr="Environnement de Développement"
+                        data-ar="بيئة التطوير" class="translatable-text" data-key="Development Environment"> Development
+                            Environment </span></h3>
+                    <div class="skill-item">
+                        <p>VS Code</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>GitHub</p>
+                    </div>
+                    <div class="skill-item">
+                        <p>Android Studio</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <section id="projects" class="fade-in">
+            <h2><i class="fas fa-project-diagram float"></i>
+                <span  data-en="Projects" data-fr="Projets" data-ar="المشاريع" class="translatable-text">Projects</span></h2>
+            <!-- The problematic <p> tag has been removed from here. Its content will be dynamically generated. -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all" data-en="All" data-fr="Tous" data-ar="الكل">All</button>
+                <button class="filter-btn" data-filter="completed" data-en="Completed Projects" data-fr="Projets Terminés" data-ar="مشاريع مكتملة">Completed Projects</button>
+                <button class="filter-btn" data-filter="in-progress" data-en="Projects in Progress" data-fr="Projets en Cours" data-ar="مشاريع قيد الاشتغال عليها">Projects in Progress</button>
+                <button class="filter-btn" data-filter="other" data-en="Other" data-fr="Autre" data-ar="أخرى">Other</button>
+            </div>
+                    
+            <div class="projects-grid"></div>
+        </section>
+
+     <section id="testimonials" class="fade-in">
+            <h2><i class="fas fa-quote-left float"></i>
+                <span data-en="Testimonials" data-fr="Témoignages" data-ar="الشهادات" class="translatable-text">Testimonials</span></h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p class="testimonial-text" data-en="This section is empty" data-fr="Cette section est vide"
+                        data-ar="هذا القسم فارغ">This section is empty</p>
+                </div>
+            </div>
+        </section>
+
+    <section id="contact" class="fade-in">
+            <h2><i class="fas fa-envelope float"></i> <span data-en="Contact" data-fr="Contact" data-ar="الاتصال"
+                    class="translatable-text">Contact</span></h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-text">
+                            <h3 data-en="Email" data-fr="E-mail" data-ar="البريد الإلكتروني">Email</h3><a
+                                href="mailto:abdellwahedabdellaoui@gmail.com">abdellwahedabdellaoui@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-github"></i></div>
+                        <div class="contact-text">
+                            <h3 data-en="GitHub" data-fr="GitHub" data-ar="GitHub">GitHub</h3><a
+                                href="https://github.com/abdelwahed-alw"
+                                target="_blank">abdelwahed-alw</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
+                        <div class="contact-text">
+                            <h3 data-en="LinkedIn" data-fr="LinkedIn" data-ar="LinkedIn">LinkedIn</h3><a
+                                href="https://www.linkedin.com/in/abdelwahed-abdellaoui-3916b5342/"
+                                target="_blank">abdelwahed-abdellaoui</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-text">
+                            <h3 data-en="Phone" data-fr="Téléphone" data-ar="الهاتف">Phone</h3><a
+                                href="tel:+212688219102">+212 6 88 21 91 02</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <!-- تم تحديث النموذج لاستخدام جافا سكريبت بدلاً من action -->
+                    <form id="contactForm">
+                        <div class="form-group"><label for="name" data-en="Name" data-fr="Nom"
+                                data-ar="الاسم">Name</label><input type="text" id="name" name="name"
+                                class="form-control" placeholder="Your Name" data-en-placeholder="Your Name" data-fr-placeholder="Votre Nom" data-ar-placeholder="اسمك" required></div>
+                        <div class="form-group"><label for="email" data-en="Email" data-fr="E-mail"
+                                data-ar="البريد الإلكتروني">Email</label><input type="email" id="email" name="email"
+                                class="form-control" placeholder="Your Email" data-en-placeholder="Your Email" data-fr-placeholder="Votre E-mail" data-ar-placeholder="بريدك الإلكتروني" required></div>
+                        <div class="form-group"><label for="message" data-en="Message" data-fr="Message"
+                                data-ar="الرسالة">Message</label><textarea id="message" name="message"
+                                class="form-control" placeholder="Your Message" data-en-placeholder="Your Message" data-fr-placeholder="Votre Message" data-ar-placeholder="رسالتك" required></textarea></div><button
+                            type="submit" class="btn btn-primary" style="width: 100%;"><i
+                                class="fas fa-paper-plane"></i> <span data-en="Send Message"
+                                data-fr="Envoyer le Message" data-ar="إرسال الرسالة">Send Message</span></button>
+                    </form>
+                </div>
+            </div>
+        </section>
+  </main>
+
+  <footer>
+        <div class="social-links">
+            <div class="social-icons-row"><a href="https://www.facebook.com/abdo.fufg" target="_blank"
+                    class="social-link" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a><a
+                    href="https://www.instagram.com/abdellwahd_alw?igsh=NTB5ZW02Nzc2MnZi" target="_blank" class="social-link"
+                    aria-label="Instagram"><i class="fab fa-instagram"></i></a><a
+                    href="https://www.reddit.com/user/abdelwahed-alo/" target="_blank" class="social-link"
+                    aria-label="Reddit"><i class="fab fa-reddit-alien"></i></a></div><button class="flower-button"
+                id="getFlowerBtn"><i class="fas fa-leaf"></i> <span data-en="Get a Flower" data-fr="Obtenir une Fleur"
+                    data-ar="احصل على زهرة">Get a Flower</span></button>
+        </div>
+        <p data-en="© 2023 Abdelwahed Abdellaoui. All rights reserved."
+            data-fr="© 2023 Abdelwahed Abdellaoui. Tous droits réservés."
+            data-ar="© 2023 عبدالواحد عبدلاوي. جميع الحقوق محفوظة.">© 2023 Abdelwahed Abdellaoui. All rights reserved.
+        </p>
+  
+    </footer>
+    <div class="custom-alert-overlay" id="customAlertOverlay">
+        <div class="custom-alert-box">
+            <h3 id="customAlertTitle" data-en="Sent Successfully!" data-fr="Envoyé avec succès !"
+                data-ar="تم الإرسال بنجاح!">Sent Successfully!</h3>
+            <p id="customAlertMessage"
+                data-en="Thank you, your message has been received and we will get back to you soon."
+                data-fr="Merci, votre message a bien été reçu et nous vous contacterons bientôt."
+                data-ar="شكرًا لك، لقد تم استلام رسالتك وسنعاود الاتصال بك قريبًا.">Thank you, your message has been
+                received and we will get back to you soon.</p><button id="customAlertClose" data-en="OK" data-fr="OK"
+                data-ar="موافق">OK</button>
+        </div>
+    </div>
+    <div class="mobile-nav-overlay" id="mobileNavOverlay" role="dialog" aria-modal="true"
+        aria-label="Mobile Navigation">
+        <div class="mobile-nav-overlay-content"><button class="mobile-nav-close-btn" id="mobileNavCloseBtn"
+                aria-label="Close navigation menu"><i class="fas fa-times"></i></button>
+            <ul class="mobile-nav-list">
+                <li class="mobile-nav-item"><a href="#about" class="mobile-nav-link"><i class="fas fa-user"></i><span
+                            class="nav-text" data-en="About" data-fr="À Propos" data-ar="من أنا">About</span></a></li>
+                <li class="mobile-nav-item"><a href="#education" class="mobile-nav-link"><i
+                            class="fas fa-graduation-cap"></i><span class="nav-text" data-en="Education"
+                            data-fr="Éducation" data-ar="التعليم">Education</span></a></li>
+                <li class="mobile-nav-item"><a href="#experience" class="mobile-nav-link"><i
+                            class="fas fa-briefcase"></i><span class="nav-text" data-en="Experience"
+                            data-fr="Expérience" data-ar="الخبرة">Experience</span></a></li>
+                <li class="mobile-nav-item"><a href="#skills" class="mobile-nav-link"><i class="fas fa-cogs"></i><span
+                            class="nav-text" data-en="Skills" data-fr="Compétences" data-ar="المهارات">Skills</span></a>
+                </li>
+                <li class="mobile-nav-item"><a href="#applications" class="mobile-nav-link"><i
+                            class="fas fa-laptop-code"></i><span class="nav-text" data-en="Applications"
+                            data-fr="Applications" data-ar="التطبيقات">Applications</span></a></li>
+                <li class="mobile-nav-item"><a href="#projects" class="mobile-nav-link"><i
+                            class="fas fa-project-diagram"></i><span class="nav-text" data-en="Projects"
+                            data-fr="Projets" data-ar="المشاريع">Projects</span></a></li>
+                <li class="mobile-nav-item"><a href="#testimonials" class="mobile-nav-link"><i
+                            class="fas fa-quote-left"></i><span class="nav-text" data-en="Testimonials"
+                            data-fr="Témoignages" data-ar="الشهادات">Testimonials</span></a></li>
+                <li class="mobile-nav-item"><a href="#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i><span
+                            class="nav-text" data-en="Contact" data-fr="Contact" data-ar="الاتصال">Contact</span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+<!-- تمت إضافة مكتبة EmailJS هنا -->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="3.js"></script>
+</html>
