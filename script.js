@@ -706,25 +706,19 @@ const customAlertTitle = document.getElementById('customAlertTitle');
 const customAlertMessage = document.getElementById('customAlertMessage');
 const customAlertClose = document.getElementById('customAlertClose');
 const sendButton = contactForm.querySelector('button[type="submit"]');
+
 (function() {
   emailjs.init({
     publicKey: "uOJbd3J6lW0fD1x-i",
   });
 })();
+
 contactForm.addEventListener('submit', function(e) {
   e.preventDefault();
+
   const serviceID = 'abdellwahed-alo';
   const templateID = 'template_gl5tj2l';
-  if (serviceID === 'abdellwahed-alo' || templateID === 'template_gl5tj2l') {
-    const currentLang = localStorage.getItem('selectedLanguage') || 'en';
-    customAlertTitle.textContent = translations["Error!"][currentLang];
-    let setupErrorMessage = "Configuration Error: Please replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' in the 3.js file.";
-    if (currentLang === 'fr') setupErrorMessage = "Erreur de configuration : Veuillez remplacer 'YOUR_SERVICE_ID' et 'YOUR_TEMPLATE_ID' dans le fichier 3.js.";
-    if (currentLang === 'ar') setupErrorMessage = "خطأ في الإعداد: الرجاء استبدال 'YOUR_SERVICE_ID' و 'YOUR_TEMPLATE_ID' في ملف 3.js.";
-    customAlertMessage.textContent = setupErrorMessage;
-    customAlertOverlay.classList.add('visible');
-    return;
-  }
+
   const originalButtonText = sendButton.innerHTML;
   const currentLang = localStorage.getItem('selectedLanguage') || 'en';
   let sendingText = "Sending...";
@@ -732,6 +726,7 @@ contactForm.addEventListener('submit', function(e) {
   if (currentLang === 'ar') sendingText = "جارٍ الإرسال...";
   sendButton.innerHTML = `<i class="fas fa-spinner fa-spin"></i> ${sendingText}`;
   sendButton.disabled = true;
+
   emailjs.sendForm(serviceID, templateID, this).then((response) => {
     sendButton.innerHTML = originalButtonText;
     sendButton.disabled = false;
@@ -747,6 +742,7 @@ contactForm.addEventListener('submit', function(e) {
     customAlertOverlay.classList.add('visible');
   });
 });
+
 customAlertClose.addEventListener('click', () => {
   customAlertOverlay.classList.remove('visible');
 });
@@ -790,15 +786,7 @@ document.addEventListener('keydown', (e) => {
     closeMobileMenu();
   }
 });
-document.querySelectorAll('.mobile-nav-link').forEach(link => {
-  link.addEventListener('click', function() {
-    document.querySelectorAll('.mobile-nav-link').forEach(l => l.classList.remove('active'));
-    this.classList.add('active');
-    setTimeout(() => {
-      closeMobileMenu();
-    }, 300);
-  });
-});
+
 const projectsData = [{
   id: "interactive-cv",
   title: "Interactive CV Website",
@@ -982,7 +970,6 @@ function lazyLoad() {
   });
   lazyImages.forEach(img => observer.observe(img));
 }
-
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker.register('/sw.js').then(registration => {
@@ -1074,9 +1061,7 @@ document.querySelectorAll('.nav-link, .mobile-nav-link').forEach(link => {
         behavior: 'smooth'
       });
       if (mobileNavOverlay.classList.contains('active')) {
-        setTimeout(() => {
-          closeMobileMenu();
-        }, 300);
+        closeMobileMenu();
       }
     }
   });
