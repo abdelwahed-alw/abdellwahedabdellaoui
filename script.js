@@ -708,14 +708,14 @@ const customAlertClose = document.getElementById('customAlertClose');
 const sendButton = contactForm.querySelector('button[type="submit"]');
 (function() {
   emailjs.init({
-    publicKey: "YOUR_PUBLIC_KEY",
+    publicKey: "uOJbd3J6lW0fD1x-i",
   });
 })();
 contactForm.addEventListener('submit', function(e) {
   e.preventDefault();
-  const serviceID = 'YOUR_SERVICE_ID';
-  const templateID = 'YOUR_TEMPLATE_ID';
-  if (serviceID === 'YOUR_SERVICE_ID' || templateID === 'YOUR_TEMPLATE_ID') {
+  const serviceID = 'abdellwahed-alo';
+  const templateID = 'template_gl5tj2l';
+  if (serviceID === 'abdellwahed-alo' || templateID === 'template_gl5tj2l') {
     const currentLang = localStorage.getItem('selectedLanguage') || 'en';
     customAlertTitle.textContent = translations["Error!"][currentLang];
     let setupErrorMessage = "Configuration Error: Please replace 'YOUR_SERVICE_ID' and 'YOUR_TEMPLATE_ID' in the 3.js file.";
