@@ -15,22 +15,22 @@
       transition: background-color 0.5s ease, color 0.5s ease;
     }
 
-    /* --- START: Red Theme Definition --- */
+   
     body.red-theme {
       --color-background: radial-gradient(ellipse at bottom, #3f1d1d 0%, #1a0a0a 100%);
       --color-text: #f1f5f9;
-      --color-primary-highlight: #f43f5e; /* Rose 500 */
-      --color-secondary-highlight: #f97316; /* Orange 500 */
-      --color-card-background: #2c1a1a; /* Background for sections */
+      --color-primary-highlight: #f43f5e;
+      --color-secondary-highlight: #f97316;
+      --color-card-background: #2c1a1a;
       --color-border: rgba(244, 63, 94, 0.3);
       --primary-color-rgb: 244, 63, 94;
-      --dark: #3b2323; /* Darker background for inner cards */
-      --dark-light: #4d2e2e; /* Lighter shade for inputs */
+      --dark: #3b2323;
+      --dark-light: #4d2e2e;
       --gray: #d1d5db;
       --light: #f1f5f9;
-      --primary-light: #fb7185; /* Rose 400 */
+      --primary-light: #fb7185;
     }
-    /* --- END: Red Theme Definition --- */
+   
 
     * {
       margin: 0;
@@ -1160,7 +1160,7 @@
       transform: translateY(-2px);
     }
 
-    /* --- START: Decoupled Intro Styles --- */
+   
     .intro-overlay {
       position: fixed;
       top: 0;
@@ -1362,7 +1362,7 @@
         text-shadow: none;
       }
     }
-    /* --- END: Decoupled Intro Styles --- */
+   
 
     @media (min-width: 768px) {
       .letter {
@@ -1672,7 +1672,7 @@
     .mobile-nav-overlay.active .mobile-nav-list li:nth-child(5) { transition-delay: 0.5s; }
     .mobile-nav-overlay.active .mobile-nav-list li:nth-child(6) { transition-delay: 0.6s; }
     .mobile-nav-overlay.active .mobile-nav-list li:nth-child(7) { transition-delay: 0.7s; }
-    .mobile-nav-overlay.active .mobile-nav-list li:nth-child(8) { transition-delay: 0.8s; } /* Fixed animation delay */
+    .mobile-nav-overlay.active .mobile-nav-list li:nth-child(8) { transition-delay: 0.8s; }
 
     .mobile-nav-link {
         display: inline-flex;
@@ -1709,9 +1709,9 @@
     .mobile-nav-link .nav-text {
       position: relative;
       z-index: 1;
-      max-width: unset; /* Override hover effect for mobile */
+      max-width: unset;
       opacity: 1;
-      display: inline-block; /* Ensure it's visible in mobile nav */
+      display: inline-block;
     }
 
     .mobile-nav-link::before {
