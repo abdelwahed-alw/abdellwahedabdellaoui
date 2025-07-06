@@ -459,16 +459,7 @@ const translations = {
     fr: "E-mail",
     ar: "البريد الإلكتروني"
   },
-  "GitHub": {
-    en: "GitHub",
-    fr: "GitHub",
-    ar: "جيت هاب"
-  },
-  "LinkedIn": {
-    en: "LinkedIn",
-    fr: "LinkedIn",
-    ar: "لينكدإن"
-  },
+  
   "Phone": {
     en: "Phone",
     fr: "Téléphone",
