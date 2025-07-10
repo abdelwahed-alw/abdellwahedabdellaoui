@@ -686,10 +686,26 @@
       justify-content: center;
     }
 
-    .about-image img {
+    .about-img, .about-image img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+    }
+    
+    .theme-img-red {
+      display: none;
+    }
+    
+    .theme-img-blue {
+      display: block;
+    }
+    
+    body.red-theme .theme-img-red {
+      display: block;
+    }
+    
+    body.red-theme .theme-img-blue {
+      display: none;
     }
 
     .skills-container {
