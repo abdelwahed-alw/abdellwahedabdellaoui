@@ -28,9 +28,9 @@ const languageOptions = document.querySelectorAll('.language-option');
 const downloadCVBtn = document.getElementById('downloadCVBtn');
 
 const cvLinks = {
-  en: "path/to/your/cv-en.pdf",
-  fr: "path/to/your/cv-fr.pdf",
-  ar: "path/to/your/cv-ar.pdf"
+  en: "https://drive.usercontent.google.com/download?id=1_3bCetGKRwJ09s9OVnJydr7e_70_lwGh&export=download",
+  fr: "https://drive.usercontent.google.com/download?id=1_3LdjCsqAB7Xhy9cbHKfzjJD_HJ03J9Z&export=download",
+  ar: "https://drive.usercontent.google.com/download?id=1_4rc0WnRXUyfsb_PDvmNyyd8n4PDKuTJ&export=download"
 };
 
 const translations = {
