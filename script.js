@@ -29,7 +29,7 @@ const downloadCVBtn = document.getElementById('downloadCVBtn');
 
 const cvLinks = {
   en: "https://drive.usercontent.google.com/download?id=1_3bCetGKRwJ09s9OVnJydr7e_70_lwGh&export=download",
-  fr: "https://drive.usercontent.google.com/download?id=1_3LdjCsqAB7Xhy9cbHKfzjJD_HJ03J9Z&export=download",
+  fr: "https://drive.usercontent.google.com/download?id=1bN4yI3pFlTqcEVrEwQpuVhYiBOBb81xF&export=download",
   ar: "https://drive.usercontent.google.com/download?id=1_4rc0WnRXUyfsb_PDvmNyyd8n4PDKuTJ&export=download"
 };
 
